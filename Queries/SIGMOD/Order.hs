@@ -95,6 +95,7 @@ profit :: (Ord a, Num a, Num (Q a), QA a, TA a) => Q [a] -> Q a
 profit xs = maximum (margins xs)
 
 -- best profit obtainable for stock on given date
+-- bestProfit 5 4
 bestProfit :: Integer -> Integer -> Q Double
 bestProfit stock date =
     profit [ t_priceQ t

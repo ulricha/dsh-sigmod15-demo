@@ -27,4 +27,4 @@ tpch1Conn :: IO SqlBackend
 tpch1Conn = sqlBackend <$> connectODBC "DSN=tpch1"
 
 tradesConn :: IO SqlBackend
-tradesConn = sqlBackend <$> connectODBC "trades"
+tradesConn = sqlBackend <$> connectODBC "DSN=trades"
