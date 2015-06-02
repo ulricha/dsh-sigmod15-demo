@@ -4,7 +4,11 @@
 
 -- | Basic DSH Examples
 module Queries.SIGMOD.Simple
-    (
+    ( map1, map2, map3, map4, map5
+    , filter1, filter2, filter3
+    , join1, join2, join3
+    , exists1, exists2, exists3
+    , forall1, forall2, forallexists
     ) where
 
 import qualified Prelude      as P
