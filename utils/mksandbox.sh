@@ -7,8 +7,7 @@ cabal sandbox add-source $HOME/work/dev/algebra-dag
 cabal sandbox add-source $HOME/work/dev/algebra-sql
 cabal sandbox add-source $HOME/work/dev/dsh
 cabal sandbox add-source $HOME/work/dev/dsh-sql
-cabal sandbox add-source $HOME/work/dev/dsh-tpc-h
-cabal sandbox add-source $HOME/work/dev/Alex.NestedQueries/aquery
+cabal sandbox add-source $HOME/work/dev/dsh-example-queries
 cabal install --dependencies-only
 cabal configure
 

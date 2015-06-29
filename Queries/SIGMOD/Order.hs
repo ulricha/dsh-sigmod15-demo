@@ -1,9 +1,9 @@
 {-# LANGUAGE FlexibleContexts    #-}
-{-# LANGUAGE MonadComprehensions #-}
-{-# LANGUAGE RebindableSyntax    #-}
-{-# LANGUAGE OverloadedStrings   #-}
-{-# LANGUAGE ViewPatterns        #-}
 {-# LANGUAGE FlexibleInstances   #-}
+{-# LANGUAGE MonadComprehensions #-}
+{-# LANGUAGE OverloadedStrings   #-}
+{-# LANGUAGE RebindableSyntax    #-}
+{-# LANGUAGE ViewPatterns        #-}
 
 -- | Order: A list-based data model
 module Queries.SIGMOD.Order
@@ -14,15 +14,15 @@ module Queries.SIGMOD.Order
     , bestProfit
     ) where
 
-import qualified Prelude      as P
+import qualified Prelude                     as P
 
-import           Database.DSH
-import           Database.DSH.Compiler
+import           Database.DSH                hiding (topK)
 import           Database.DSH.Backend.Sql
+import           Database.DSH.Compiler
 
-import           Schema.TPCH
-import           Schema.AQuery
 import           Queries.TPCH.BuildingBlocks
+import           Schema.AQuery
+import           Schema.TPCH
 
 --------------------------------------------------------------------------------
 -- Some simple order-aware queries
