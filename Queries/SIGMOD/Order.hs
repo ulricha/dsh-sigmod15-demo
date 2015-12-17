@@ -96,7 +96,7 @@ profit xs = maximum (margins xs)
 
 -- best profit obtainable for stock on given date
 -- bestProfit 5 4
-bestProfit :: Integer -> Integer -> Q Double
+bestProfit :: Integer -> Day -> Q Double
 bestProfit stock date =
     profit [ t_priceQ t
            | t <- sortWith t_timestampQ trades
